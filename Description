@@ -1,0 +1,15 @@
+This was a course project performed in groups of 6.
+
+This code simulates a 5-stage single-core pipelined processor in C++
+The 5 stages are:
+  1) IF (Instruction Fetch)
+  2) ID (Instruction Decode)
+  3) ALU (Arithmetic Logic Unit)
+  4) MEM (Memory)
+  5) WB (Writeback)
+  
+The instruction format is inspired from MIPS
+
+The instructions are first parsed into machine code and then the pipeline starts fetching each instruction
+
+All possible hazards are dealt with by adding waste instructions during the parsing stage in order to maintain correctness of result
